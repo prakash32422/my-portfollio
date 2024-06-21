@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Chandra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 60);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(198, 241, 156);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.9rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 50px 0;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(174, 116, 227);
+        }
+
+        #element {
+            color: rgb(94, 94, 248);
+        }
+
+        .contactsection,
+        .skillssection {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .contactsection h2,
+        .skillssection h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contactsection p,
+        .skillssection ul {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .skillssection ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skillssection ul li {
+            margin: 20px 0;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: rgb(94, 94, 248);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: rgb(174, 116, 227);
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 50px 0;
+        }
+
+        .contact-info {
+            width: 40%;
+        }
+
+        .contact-form-container {
+            width: 40%;
+        }
+
+        .skill-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .skill-name {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .progress {
+            flex: 2;
+            background-color: rgb(19, 19, 60);
+            border-radius: 5px;
+            overflow: hidden;
+            height: 15px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: rgb(94, 94, 248);
+            border-radius: 5px;
+            line-height: 15px;
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .firstsection>div {
+                width: 80%;
+            }
+
+            .rightsection img {
+                width: 100%;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info,
+            .contact-form-container {
+                width: 80%;
+            }
+
+            .skillssection ul li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skill-name {
+                margin-bottom: 5px;
+            }
+
+            .progress {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Prakash Chandra</span>
+                <div>and I am an enthusiastic</div>
+                <div>web developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="hello.png" alt="">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <h1></h1>
+        </section>
+
+        <section class="skillssection">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <div class="skill-container">
+                        <div class="skill-name">HTML & CSS</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-container">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-container">
+                        <div class="skill-name">React</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-container">
+                        <div class="skill-name">Python</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-container">
+                        <div class="skill-name">SQL</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contactsection">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Email: prakash32422@gmail.com</p>
+                    <p>Phone: 9693714504</p>
+                    <p>Address: New Mainura Bala Ji Nagar, Saguna More, Patna, Bihar</p>
+                </div>
+                <div class="contact-form-container">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [ 'web designer', 'data analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
